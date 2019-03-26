@@ -7,7 +7,7 @@ QRCode:
         return
     }
 
-    @("GenerateQR", "生成二维码")
+    @("GenerateQR", "Generate QRCode")
 return
 
 GenerateQR:

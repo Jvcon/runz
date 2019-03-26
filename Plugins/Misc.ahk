@@ -14,7 +14,6 @@ Misc:
     @("CurrencyRate", "汇率 使用示例： hl JPY EUR 2")
     @("CNY2USD", "汇率 人民币兑换美元")
     @("USD2CNY", "汇率 美元兑换人民币")
-    @("UrlEncode", "URL 编码")
 return
 
 CNY2USD:
@@ -172,13 +171,6 @@ Calc:
     clipboard := result
     TurnOnRealtimeExec()
 return
-
-UrlEncode:
-    text := Arg == "" ? clipboard : Arg
-    clipboard := UrlEncode(text)
-    DisplayResult(clipboard)
-return
-
 
 #include %A_ScriptDir%\Lib\Eval.ahk
 #include %A_ScriptDir%\Lib\JSON.ahk
